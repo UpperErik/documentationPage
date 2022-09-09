@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+        <li>
+        <a class="nav-link" href="#What_you_should_already_know"> What you should already know </a>   
+        </li>
+        <li>
+            <a class="nav-link" href="#JavaScript_and_Java"> JavaScript and Java </a>   
+        </li>
+        <li>
+            <a class="nav-link" href="#Hello_world"> Hello World  </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Variables"> Variables </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Declaring_variables"> Declaring variables </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Data_types">Data types</a>
+        </li>
+    </ul>
+</nav>
+    <main id="main-doc">
+        <section id="What_you_should_already_know" class="main-section">
+            <header> What you should already know </header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+            </article>
+            <ul>
+                <li> 
+                    A general understanding of the Internet and the World Wide Web (WWW).
+
+                  </li>
+                <li>
+                  Good working knowledge of HyperText Markup Language (HTML).
+
+                </li>
+                <li>
+                  Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                </li>
+            </ul>
+        </section>
+        <section id="JavaScript_and_Java" class="main-section">
+            <header> JavaScript and Java </header>
+            <article>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally
+                    different in some others. The JavaScript language resembles Java but
+                    does not have Java's static typing and strong type checking.
+                    JavaScript follows most Java expression syntax, naming conventions
+                    and basic control-flow constructs which was the reason why it was
+                    renamed from LiveScript to JavaScript.
+                  </p>
+
+                  <p>
+                    In contrast to Java's compile-time system of classes built by
+                    declarations, JavaScript supports a runtime system based on a small
+                    number of data types representing numeric, Boolean, and string
+                    values. JavaScript has a prototype-based object model instead of the
+                    more common class-based object model. The prototype-based model
+                    provides dynamic inheritance; that is, what is inherited can vary
+                    for individual objects. JavaScript also supports functions without
+                    any special declarative requirements. Functions can be properties of
+                    objects, executing as loosely typed methods.
+                  </p>
+                 
+            </article>
+            
+        </section>
+        <section id="Hello_world" class="main-section">
+            <header> Hello world </header>
+            <article>
+                <p>Hello world</p>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");
+                  </code>
+                  <br><br>
+                  <code> console.log("hello world");</code>
+            </article>
+            <br>
+        </section>
+        <section id="Variables" class="main-section">
+            <header> Variables </header>
+            <article>
+                <p>
+                    You use variables as symbolic names for values in your application.
+                    The names of variables, called identifiers, conform to certain rules.
+                  </p>
+                <p>
+                    A JavaScript identifier must start with a letter, underscore (_), or
+                    dollar sign ($); subsequent characters can also be digits (0-9).
+                    Because JavaScript is case sensitive, letters include the characters
+                    "A" through "Z" (uppercase) and the characters "a" through "z"
+                    (lowercase).
+                  </p>
+                <p>
+                    You can use ISO 8859-1 or Unicode letters such as å and ü in
+                    identifiers. You can also use the Unicode escape sequences as
+                    characters in identifiers. Some examples of legal names are
+                    Number_hits, temp99, and _name.
+                  </p>
+                  <br>
+                  <code>resultado = 3 + 1</code>
+                  <code>numero_1 = 3
+                    numero_2 = 1
+                    resultado = numero_1 + numero_2</code>
+            </article>
+        </section>
+        <br>
+        <section id="Declaring_variables" class="main-section">
+            <header>Declaring variables  </header>
+            <article>
+                <p>
+                    With the keyword var. For example, </p>
+                <p>
+                    By simply assigning it a value. For example,
+                    </p>
+                <p>
+                    With the keyword let. For example,</p>
+                    <p> This
+                        syntax can be used to declare a block scope local variable. See
+                        Variable scope below.
+                      </p>
+
+                      <code>
+                        var numero_1 = 3;
+                        var numero_2 = 1;
+                        var resultado = numero_1 + numero_2;
+                      </code>
+            </article>
+        </section>  
+        <br>
+        <section id="Data_types" class="main-section">
+            <header> Data types </header>
+            <article>
+                <p>The latest ECMAScript standard defines seven data types:</p>
+                <ul>
+                    <li>
+                        <p>Six data types that are primitives:</p>
+                        <ul>
+                            <li>Boolean. true and false.</li>
+                            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                            <li>undefined. A top-level property whose value is undefined.</li>
+                            <li>Number. 42 or 3.14159.</li>
+                            <li>String. "Howdy"</li>
+                            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                        </ul>
+                    </li>
+                    <li>and Object</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
